@@ -1,4 +1,4 @@
-function entire_mixed(s){
+	function entire_mixed(s){
     		var rad1 = {},idx1={},ctr=0
     		if (s=="Expression <0 can't be here") return s
     		var [a,b,c] = s.split(/[\s]*\s*root\s+(\d+)\s+of\s+(.*)/g).map(c=>c.replace(/-/,function(){ctr+=1;return''}).replace(/.\^0/g,''))
@@ -28,7 +28,7 @@ function entire_mixed(s){
                             .replace(/\^1(?=\D|$)/g,'').replace(/(?<=\D)1(?=[a-z])/ig,'')
                                 .replace(/ ?root 1.+/g,'').replace(/ ?root \d+ of (1|)$/g,'')
                                     .replace(/- /,'-') || "1"
-}
+	}
 
 		function mixed_entire(s){
     		var rad = {},idx={},cor=0

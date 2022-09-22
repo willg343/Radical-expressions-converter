@@ -14,7 +14,7 @@
 	<ul style = "font-size:20px; list-style-type:square; margin-top:-8px;margin-left:20px; width:850px">
 		<li>an infinite amount of single letter variables</li>
 		<li>powers up to 4*10^9 </li>
-		<li>infinitely big root indexes</li>
+		<li>infinitely large root indexes</li>
 		<li>integer coefficients up to 10^7</li>
 		<li>negative expressions</li>
 		<li>same variable with different powers repeatedly used in an expression</li>

@@ -73,7 +73,14 @@
     			var int_a = i_a*i,int_c = Math.floor(i_c/i**b)
     			var finalize = d=>Object.keys(d).sort((_,$)=>d[_]==d[$]?_.charCodeAt(0)-$.charCodeAt(0):d[$]-d[_]).map(v=>`${v}^${d[v]}`).join``
     			var f_net = `${' - '[ctr]}${int_a}${finalize(idx1)} root ${b} of ${int_c}${finalize(rad1)}`
-    			return f_net.replace(/.\^0/g,'').replace(/^ +/g,'').replace(/^(-)?1 ?(?=\D)/,q=>q[1]?'-':'').replace(/\^1(?=\D|$)/g,'').replace(/(?<=\D)1(?=[a-z])/ig,'').replace(/ ?root 1.+/g,'').replace(/ ?root \d+ of (1|)$/g,'').replace(/- /,'-') || "1"   // js has lately been functioning very weirdly and replacing pieces of text the in the incorrect order, so I had to use replace the needed # of times
+    			return f_net.replace(/.\^0/g,'').
+					replace(/^ +/g,'').
+						replace(/^(-)?1 ?(?=\D)/,q=>q[1]?'-':'').
+							replace(/\^1(?=\D|$)/g,'').
+								replace(/(?<=\D)1(?=[a-z])/ig,'').
+									replace(/ ?root 1.+/g,'').
+										replace(/ ?root \d+ of (1|)$/g,'').
+											replace(/- /,'-') || "1"
 		}
 
 		function mixed_entire(s){
@@ -91,7 +98,12 @@
     			vals = Object.keys(rad).sort((_,$)=>rad[_]==rad[$]?_.charCodeAt(0)-$.charCodeAt(0):rad[$]-rad[_]).map(v=>`${v}^${rad[v]}`).join``
     			var ints = parseInt((a.match(/^-?\d+/)||[1])[0])**(+b)*parseInt((c.match(/^-?\d+/)||[1])[0])
     			var f_nett = `root ${b} of ${['','-',''][cor]}${ints}${vals}`
-    			return f_nett.replace(/.\^0/g,'').replace(/\^1(?=\D|$)/g,'').replace(/(?<=\D)1(?=[a-z])/ig,'').replace(/root 1 of /g,'').replace(/root \d+ of 1$/g,'').replace(/- /,'-') || "1"    //js has lately been functioning very weirdly and replacing pieces of text the in the incorrect order, so I had to use replace the needed # of times
+    			return f_nett.replace(/.\^0/g,'').
+					replace(/\^1(?=\D|$)/g,'').
+						replace(/(?<=\D)1(?=[a-z])/ig,'').
+							replace(/root 1 of /g,'').
+								replace(/root \d+ of 1$/g,'').
+									replace(/- /,'-') || "1"
     	}
 
 		function x(){

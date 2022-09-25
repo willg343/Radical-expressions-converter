@@ -1,4 +1,4 @@
-This program is intended to act as a simple radical converter. It operates with mixed and entire radicals converting them back and forth. The limits and boundaries include:
+This program is intended to act as a radical converter. It operates with mixed and entire radicals converting them back and forth. The limits and boundaries include:
 1.	An infinite amount of single letter variables, same variable with different powers repeatedly used in an expression
 2.	Variable powers up to 4*10^9
 3.	Infinitely big root indexes

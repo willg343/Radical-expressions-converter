@@ -27,7 +27,7 @@
                          .replace(/^(-)?1 ?(?=\D)/,q=>q[1]?'-':'')
                             .replace(/\^1(?=\D|$)/g,'').replace(/(?<=\D)1(?=[a-z])/ig,'')
                                 .replace(/ ?root 1.+/g,'').replace(/ ?root \d+ of (1|)$/g,'')
-                                    .replace(/- /,'-') || "1"
+                                    .replace(/- /,'-') || "1";
 	}
 
 		function mixed_entire(s){
@@ -50,5 +50,5 @@
                           .replace(/(?<=\D)1(?=[a-z])/ig,'')
                             .replace(/root 1 of /g,'')
                               .replace(/root \d+ of 1$/g,'')
-                                .replace(/- /,'-') || "1"
+                                .replace(/- /,'-') || "1";
 }

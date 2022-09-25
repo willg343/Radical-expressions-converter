@@ -30,7 +30,7 @@
                                     .replace(/- /,'-') || "1";
 	}
 
-		function mixed_entire(s){
+	function mixed_entire(s){
     		var rad = {},idx={},cor=0
     		if (s=="Expression <0 can't be here") return s
     		var [a,b,c] = s.split(/[\s]*\s*root\s+(\d+)\s+of\s+(.*)/g).map(t=>t.replace(/-/,function(){cor+=1;return''}).replace(/.\^0/g,''))
@@ -51,4 +51,4 @@
                             .replace(/root 1 of /g,'')
                               .replace(/root \d+ of 1$/g,'')
                                 .replace(/- /,'-') || "1";
-}
+	}

@@ -3,6 +3,5 @@ This program is intended to act as a radical converter. It operates with mixed a
 2.	Variable powers up to 4*10^9
 3.	Infinitely big root indexes
 4.	Integer coefficients up to 10^7
-5.	Negative expressions
-6.  Partial handling of negative radicands, unless a negative expression is combined with an even power - in such a case the program outputs a warning.
-7.  Any whole numbers may be used, as long as the resulting values are kept in the range -3 * 10^15 to 3 * 10^15 (as further beyond that, JavaScript has rounding issues when performing mathematical operations on the numbers)
+5.  Partial handling of negative radicands, unless a negative expression is combined with an even power - in such a case the program outputs a warning.
+6.  Any whole numbers may be used, as long as the resulting values are kept in the range -3 * 10^15 to 3 * 10^15 (as further beyond that, JavaScript has rounding issues when performing mathematical operations on the numbers)

@@ -48,6 +48,7 @@
 		<li>Contact me: will.gusarov@gmail.com </li>
 
 	<script>
+
 		function entire_mixed(s){
     			var rad1 = {},idx1={},ctr=0
     			if (s=="Expression <0 can't be here") return s
